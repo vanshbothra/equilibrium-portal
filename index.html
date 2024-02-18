@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participant Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .card {
+      background-image: url('https://www.dropbox.com/scl/fi/0u656a26a575rw1zjyq8m/Background.png?rlkey=eqfct1c7tp6c6wzhpq635mqi0&raw=1');
+      /* Update your image URL */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      width: 90%;
+      margin-top: auto;
+      /* Adjusted for responsiveness */
+      max-width: 600px;
+      /* Maximum width */
+      height: auto;
+      /* Adjusted for responsiveness */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header,
+    .card-footer {
+      width: 100%;
+    }
+
+    .card-header img,
+    .card-footer img {
+      width: 100%;
+      height: auto;
+      /* Ensure the image scales correctly */
+    }
+
+    .card-content {
+      font-family: 'Lora', sans-serif;
+      color: white;
+      padding: 20px;
+    }
+
+    .participant-name,
+    .card .guidelines h3 {
+      font-family: 'League Gothic', sans-serif;
+      margin: 10px 0;
+    }
+
+    .participant-name {
+      font-size: 4vw;
+    }
+
+    .card p,
+    .card .guidelines ul li {
+      font-size: 3vw;
+    }
+
+    .card .status {
+      color: #21ba45;
+    }
+
+    .card .guidelines ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .card .guidelines ul li {
+      background: #183d5d;
+      color: #ffffff;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .participant-name {
+        font-size: 5vw;
+      }
+
+      .card p,
+      .card .guidelines ul li {
+        font-size: 4vw;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .participant-name {
+        font-size: 6vw;
+      }
+
+      .card p,
+      .card .guidelines ul li {
+        font-size: 5vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="card-header"><img src="https://www.dropbox.com/scl/fi/2tljfcifmga84mwrq5019/Header.png?rlkey=o80u4oewmlbveegoljmmnnw8m&raw=1" alt="Card Header" /></div>
+    <img src="https://www.dropbox.com/scl/fi/g00847u7rudcl1swjc87j/EQUILIBRIUM.png?rlkey=u07betnkso6hgwvnyfuwzt82d&raw=1" alt="EQUILIBRIUM 2.0" style="width: 100%; height: auto;">
+    <div class="card-content">
+      <p class="participant-name"><strong>NAME OF PARTICIPANT:</strong> [Participant Name]</p>
+      <p><strong>College:</strong> [College Name]</p>
+      <p><strong>Contact:</strong> [Mobile Number]</p>
+      <p><strong>Events:</strong> [Names of Events]</p>
+      <p class="status">Status: [IN/OUT]</p>
+      <div class="guidelines">
+        <h3>GUIDELINES FOR CAMPUS</h3>
+        <ul>
+          <li>Rule 1</li>
+          <li>Rule 2</li>
+          <li>Rule 3</li>
+          <li>Rule 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-footer"><img src="https://www.dropbox.com/scl/fi/kduw3ocf2ckaygth9glba/Scanned-ID-5.png?rlkey=uwqqenek940h811qkkfyl0zii&raw=1" alt="Card Footer" /></div>
+  </div>
+
+</body>
+
+</html>

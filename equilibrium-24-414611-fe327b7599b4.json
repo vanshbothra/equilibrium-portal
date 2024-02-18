@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "equilibrium-24-414611",
+  "private_key_id": "fe327b7599b47c58f4d0cb4aa4ac01c65ed9a5f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCw6gL5FhmiOYBS\ngJm5cXiZWhLVZqTOSXD5qjobq+X+lA0bYuXe4HyoEnwdMYysY1Nxc+/DYG410/CI\nvmCK0pK9zh6/i1ah5vT810b/LFugMniG0JCzmsKAiTv0zwKRBo0ptOdTjhIMEPlL\n2fmnja5LPN65sgyhAKetXcA94MDiAdWlvWmEavfHm+NcFRNu/j7cXEesywrPRyvN\n4poymKE7FkRDZ8WwYtGMcGqEgpy0TR6wLXJzMOzN4vdl+PuTWfWqXklpnj6UkyaN\nUqM9dOpa5JwxpukG6YD/Cyb0mJ4ubfB2fP/xdhD1ssdojC13rUt7SVZ9RMskgfOA\nuhP0Z7tbAgMBAAECggEAAjEaPDc50qGIE6El6ff4iLHYfONY1FxUrmCBBlm9Wjlc\nV/znvPGKRkWuk9quWvyfX90udVInd9bsFSL0c8y79JF8c7QPnopvQOpy+zpzvNH2\nz7/iv4CsglTUe/Ehu/Pnb+10AObWa2bZxEbArXR3hPHjDvdZPtEtbU3R/IQMDCfc\nRHUe/NI3NdHXPIsUImmYNa2kfbfRIt676G/37A4kIPhJhV3lM3p67WUF0vQg4ryv\nC1tKCucTDxigZrVbvqAAg+flQZhpX9y8FQHiJz7mgsVe5L9fIH3x5uIZNmY/8vSB\n4R9D0cWeZQ0shdxIjtp/KCyxmclsz/6QA99vP+V/BQKBgQDjGOA53TTF72RFhW/C\nUzv7rBXaPWjR4V0/cX/3SlQVX8+49W3brgY8/FmKs81t7cOHSOlJmZu6mkpxAFpc\nkl01lTyPPvtLNB/sjCVUgjMuo9mUFvAHLXKSDwiWESrUQIU8B+fSPqIjekJ+el7T\nMx6UcSkwOxAa0easAP1XoLqvnwKBgQDHbhsJK7Ft3JSKQb7wi0zY+LmhiY+Zs0H6\nNvl6Yn5lotjgt8QHvTPv8xbklk5Xydf5uhU/cB2W+KXNmZiXweLVqBYQFi1bKWon\nOI6GTgskTZR/9z96fnrj9Nyl7RMesihFWwqpMao9LhUtS+FOI288KV59lU/yoSva\n/RlyE4GqxQKBgQCPJz8xOp/ppd4vdM3eUVmea/vadpt8sfN16rYfzFr0nlDy5sM5\nl5mXF/vZ0z3L7fUzcmKcYpgoKNqEIRTVBe57uHdUVP9TiKgXFMDzZJ+e5upgz5S+\n8YcnSxK+hlPZOFLEZLddcN4EPy1rTPg5ah/8stij7pdYULh39Ke+dTM5QQKBgQCA\nJ08US5GO6YpCdhE+/iT54ItZNM6klD63jZAvhw92PHllnnFID9tKPEnfxn69hyVU\ngrGYvHEnTM0vG56lFqCvb34OBFJNHIXsgjmEMK6UO45L1RRjoNdTmUwZDAmXViDu\nwJxPMW0WN4DARNyZm8elP2hLByIC5nMKHE63sbVHiQKBgQC71VYFmt4Rq2sYqGmB\ng1xT/U982GkArsDAv8nMgIhX4F3VeBj/iHcl4odX63fMhy6xyJDpvybOE1DQvBN9\nG582A1jwoPWA3upCNVSGIBlqXEBtVTjlEWxc3y6KMu/2N/Dp/YyictmmY8C5HsMP\n5tqcMltlFRMrdy4E9cwHAUCsQg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "sign-in-manager@equilibrium-24-414611.iam.gserviceaccount.com",
+  "client_id": "117691993374865582448",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sign-in-manager%40equilibrium-24-414611.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
