@@ -17,7 +17,7 @@ require('dotenv').config();
 //     console.log(participant.College);
 // }
 
-fs.readFile("./equilibrium_registration.json", 'utf-8', (err, data) => {
+fs.readFile("./equilibrium_registrations.json", 'utf-8', (err, data) => {
     const participants = JSON.parse(data);
     console.log(participants[0]["Candidate's Name"]);
 });
@@ -61,7 +61,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/:id", async (req, res) => {
     var response = await axios.get(`${apiUrl}/participants/${req.params.id}?populate=events`, axiosConfig);
-    // console.log(response.data.data.attributes);
+    console.log(response.data.data.attributes.events.data);
     res.render('index', {details: response.data.data});
 });
 
