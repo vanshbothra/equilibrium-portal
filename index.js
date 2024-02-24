@@ -112,9 +112,10 @@ app.post("/sign-in", async (req, res) => {
     var participantDetails = await axios.get(`${apiUrl}/participants/${participantId}`, axiosConfig);
     var detail = [participantDetails.data.data.attributes.Contact, participantDetails.data.data.attributes.Name, participantDetails.data.data.attributes.College, "in"];
     // console.log(participantDetails.data);
+    var redirectID = participantId - 25;
     try {
         var signIn = await axios.put(`${apiUrl}/participants/${participantId}`, {data: {Day_1: true}} , axiosConfig);
-        res.redirect(`/${participantId}`);
+        res.redirect(`/${redirectID}`);
         updateSheet(detail);
     } catch (error) {
         console.error("Error Signing: ", error);
@@ -128,9 +129,10 @@ app.post("/sign-out", async (req, res) => {
     var participantDetails = await axios.get(`${apiUrl}/participants/${participantId}`, axiosConfig);
     var detailOut = [participantDetails.data.data.attributes.Contact, participantDetails.data.data.attributes.Name, participantDetails.data.data.attributes.College, "out"];
     // console.log(participantDetails.data);
+    var redirectID = participantId - 25;
     try {
         var signOut = await axios.put(`${apiUrl}/participants/${participantId}`, {data: {Day_1: false}} , axiosConfig);
-        res.redirect(`/${participantId}`);
+        res.redirect(`/${redirectID}`);
         updateSheetOut(detailOut);
     } catch (error) {
         console.error("Error Signing: ", error);
