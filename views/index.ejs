@@ -344,12 +344,6 @@
           <h1 class="postcard__title"><strong>Name:</strong> <%= details.attributes.Name %></h1>
           <h1 class="postcard__title"><strong>College:</strong> <%= details.attributes.College %></h1>
           <h1 class="postcard__title"><strong>Contact:</strong> +<%= details.attributes.Contact %></h1>
-          <% let events = ""; %>
-          <% let eventsList = details.attributes.events.data; %>
-          <% eventsList.forEach((event) => { %>
-            <% events = events + event.attributes.Name + ',' %>
-          <% }); %>
-          <h1 class="postcard__title"><strong>Events:</strong> <%= events %> </h1>
           <h1 class="postcard__title"><strong>Status:</strong> <%= details.attributes.Day_1 %></h1>
           <br>
           <% if (details.attributes.Day_1 == false) { %>
@@ -390,7 +384,6 @@
       <p><strong>NAME OF PARTICIPANT:</strong> <%= details.attributes.Name %></p>
       <p><strong>College:</strong> <%= details.attributes.College %></p>
       <p><strong>Contact:</strong> <%= details.attributes.Contact %></p>
-      <p><strong>Events:</strong> <%= details.attributes.events.data[0].attributes.Name %></p>
       <p class="status">Status: <%= details.attributes.Day_1 %></p>
 
         <form id="participantForm" action="/sign-in" method="POST">
