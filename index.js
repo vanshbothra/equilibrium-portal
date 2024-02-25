@@ -17,7 +17,7 @@ require('dotenv').config();
 //     console.log(participant.College);
 // }
 
-// fs.readFile("./equilibrium_registrations.json", 'utf-8', async (err, data) => {
+// fs.readFile("./day2-registration.json", 'utf-8', async (err, data) => {
 //     const participants = JSON.parse(data);
 //     for(let i=0; i<(participants.length); i++) {
 //         // console.log(participants[i]["Candidate's Name"]);
@@ -54,7 +54,7 @@ const updateSheet = async (participantDetails) => {
     await googleSheetsInstance.spreadsheets.values.append({
         auth,
         spreadsheetId,
-        range: "Sheet1",
+        range: "Entry",
         valueInputOption: "USER_ENTERED",
         resource: {
             values: [participantDetails]
@@ -80,7 +80,7 @@ const updateSheetOut = async (participantDetails) => {
     await googleSheetsInstance.spreadsheets.values.append({
         auth,
         spreadsheetId,
-        range: "Sheet2",
+        range: "EXIT",
         valueInputOption: "USER_ENTERED",
         resource: {
             values: [participantDetails]
@@ -114,7 +114,7 @@ app.post("/sign-in", async (req, res) => {
     // console.log(participantDetails.data);
     var redirectID = participantId - 25;
     try {
-        var signIn = await axios.put(`${apiUrl}/participants/${participantId}`, {data: {Day_1: true}} , axiosConfig);
+        var signIn = await axios.put(`${apiUrl}/participants/${participantId}`, {data: {Day_2: true}} , axiosConfig);
         res.redirect(`/${redirectID}`);
         updateSheet(detail);
     } catch (error) {
@@ -131,7 +131,7 @@ app.post("/sign-out", async (req, res) => {
     // console.log(participantDetails.data);
     var redirectID = participantId - 25;
     try {
-        var signOut = await axios.put(`${apiUrl}/participants/${participantId}`, {data: {Day_1: false}} , axiosConfig);
+        var signOut = await axios.put(`${apiUrl}/participants/${participantId}`, {data: {Day_2: false}} , axiosConfig);
         res.redirect(`/${redirectID}`);
         updateSheetOut(detailOut);
     } catch (error) {
